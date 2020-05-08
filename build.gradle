@@ -17,6 +17,14 @@ buildscript {
     }
 }
 
+allprojects {	
+    repositories {	
+        google()	
+        jcenter()	
+
+    }	
+}
+
 apply plugin: 'com.android.application'
 
 android {
