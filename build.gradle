@@ -25,6 +25,14 @@ allprojects {
     }
 }
 
+android {
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        warningsAsErrors false
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
