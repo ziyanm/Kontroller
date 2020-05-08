@@ -28,17 +28,17 @@ allprojects {
     }	
 }
 
-defaultConfig {
-    applicationId "com.github.roarappstudio.btkontroller"
-    minSdkVersion 27
-    targetSdkVersion 27
-    versionCode 1
-    versionName "1.0"
-}
 
 android {
-    compileSdkVersion 27
-
+    defaultConfig {
+        applicationId "com.github.roarappstudio.btkontroller"
+        minSdkVersion 27
+        compileSdkVersion 27
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    
     lintOptions {
         abortOnError false
         checkReleaseBuilds false
