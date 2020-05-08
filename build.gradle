@@ -17,14 +17,6 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        
-    }
-}
-
 apply plugin: 'com.android.application'
 
 android {
@@ -35,8 +27,4 @@ android {
         checkReleaseBuilds false
         warningsAsErrors false
     }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
